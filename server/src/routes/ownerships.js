@@ -12,7 +12,7 @@ const transport = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "enzo.ulloa.i@gmail.com",
+    user: "juan.hernandez.morani@gmail.com",
     pass: "koywxiscacvjrugy",
   },
 });
@@ -95,7 +95,7 @@ router.post("/", async (req, res) => {
 
   const messageForRealState = {
     from: `${name}`,
-    to: "enzo.ulloa.i@gmail.com",
+    to: "juan.hernandez.morani@gmail.com",
     subject: `Ventas - ${location} - ${price} - ${state}`,
     text: `Formulario de peticion de ventas`,
     html: `<div style="text-align:center;"><p>Nombre: ${name}</p>
@@ -118,9 +118,9 @@ router.post("/", async (req, res) => {
   };
 
   const messageForClient = {
-    from: "'Henry Inmobiliaria' <henryinmobiliaria@gmail.com>",
-    to: "enzo.ulloa.i@gmail.com",
-    subject: `Gracias por registrarte en Henry Inmobiliaria`,
+    from: "'Blitz Inmobiliaria' <juan.hernandez.morani@gmail.com>",
+    to: "juan.hernandez.morani@gmail.com",
+    subject: `Gracias por registrarte en Blitz Inmobiliaria`,
     text: `Su formulario fu enviado con exito`,
     html: `<p style="text-align:center;">Su formulario fu enviado con exito, muy pronto nos contactaremos con usted</p>
     </br>
